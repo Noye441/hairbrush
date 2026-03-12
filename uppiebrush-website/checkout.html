@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | UppieBrush</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Alpha Uppies</div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="page-hero small-hero">
+    <p class="eyebrow">Secure Checkout</p>
+    <h1>Complete Your Purchase</h1>
+    <p>Pay with card, Apple Pay, or Google Pay.</p>
+  </section>
+
+  <section class="section">
+    <div class="cards">
+      <div class="card">
+        <h3>Credit / Debit Cards</h3>
+        <p>Visa, Mastercard, American Express, Discover</p>
+      </div>
+      <div class="card">
+        <h3>Apple Pay</h3>
+        <p>Fast checkout for Apple users</p>
+      </div>
+      <div class="card">
+        <h3>Google Pay</h3>
+        <p>Fast checkout for Google wallet users</p>
+      </div>
+    </div>
+
+    <div class="card checkout-card">
+      <h3>Billing Details</h3>
+
+      <form id="checkout-form">
+        <input type="text" class="input-field" placeholder="Full Name" required />
+        <input type="email" class="input-field" placeholder="Email Address" required />
+        <input type="text" class="input-field" placeholder="Card Number" required />
+
+        <div class="payment-row">
+          <input type="text" class="input-field" placeholder="MM/YY" required />
+          <input type="text" class="input-field" placeholder="CVC" required />
+        </div>
+
+        <button type="submit" class="btn checkout-btn">Pay Now</button>
+      </form>
+
+      <p class="checkout-note">
+        Demo checkout only. For real payments, connect Stripe later.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Alpha Uppies © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

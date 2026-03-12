@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: #f7f1eb;
+  color: #2d1f1a;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(255, 248, 242, 0.97);
+  border-bottom: 1px solid #e6d7ca;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6f3b7c;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #2d1f1a;
+  font-weight: 600;
+}
+
+.navbar nav a:hover {
+  color: #6f3b7c;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.7rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6f3b7c;
+}
+
+.cart-link {
+  font-weight: 700;
+}
+
+.investor-pill {
+  background: #6f3b7c;
+  color: white !important;
+  padding: 10px 16px;
+  border-radius: 999px;
+}
+
+.hero,
+.page-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 8%;
+  min-height: 85vh;
+  background: linear-gradient(to right, #fff8f2, #f3e3d7);
+}
+
+.small-hero {
+  min-height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text,
+.hero-image {
+  flex: 1;
+}
+
+.eyebrow {
+  color: #a06a3b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero h1,
+.page-hero h1 {
+  font-size: 4rem;
+  color: #6f3b7c;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero p,
+.page-hero p,
+.section p {
+  max-width: 760px;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  background: #6f3b7c;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #5a2f64;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #6f3b7c;
+  border: 2px solid #6f3b7c;
+}
+
+.btn-outline:hover {
+  background: #6f3b7c;
+  color: white;
+}
+
+.placeholder-box,
+.video-box,
+.compare-box,
+.photo-card {
+  background: white;
+  border: 2px dashed #c7ac95;
+  border-radius: 24px;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a6b56;
+  padding: 20px;
+  text-align: center;
+}
+
+.section {
+  padding: 80px 8%;
+}
+
+.light {
+  background: #fff8f2;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #6f3b7c;
+}
+
+.section-intro {
+  margin-bottom: 25px;
+}
+
+.cards,
+.grid-3,
+.hair-types,
+.before-after {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.cards {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.grid-3,
+.hair-types,
+.before-after {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card,
+.type-card {
+  background: white;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(80, 50, 40, 0.08);
+}
+
+.type-card {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.type-card span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-weight: normal;
+  color: #7a6255;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(80, 50, 40, 0.06);
+}
+
+.faq-question {
+  width: 100%;
+  background: white;
+  border: none;
+  text-align: left;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #2d1f1a;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 20px 20px;
+  color: #6b5548;
+}
+
+.progress-wrap {
+  max-width: 800px;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #7a6255;
+  gap: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: #ead8ca;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(to right, #d4a373, #6f3b7c);
+}
+
+.progress-text {
+  margin-top: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 12px;
+  border: 1px solid #d8c3b4;
+  border-radius: 14px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.payment-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.payment-row .input-field {
+  flex: 1;
+  min-width: 180px;
+}
+
+.checkout-card {
+  margin-top: 25px;
+}
+
+.checkout-btn {
+  margin-top: 18px;
+}
+
+.checkout-note {
+  margin-top: 14px;
+  color: #7a6255;
+  font-size: 0.95rem;
+}
+
+.cart-total {
+  margin-top: 20px;
+}
+
+.cart-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: #2d1f1a;
+  color: #f3e3d7;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .navbar nav.show {
+    display: flex;
+  }
+}

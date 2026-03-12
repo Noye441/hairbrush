@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | UppieBrush</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Alpha Uppies</div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="page-hero small-hero">
+    <p class="eyebrow">Your Cart</p>
+    <h1>Shopping Cart</h1>
+    <p>Review your UppieBrush order before checkout.</p>
+  </section>
+
+  <section class="section">
+    <div id="cart-items"></div>
+    <h3 id="cart-total" class="cart-total">Total: $0.00</h3>
+
+    <div class="cart-actions">
+      <a href="checkout.html" class="btn">Proceed to Checkout</a>
+      <button class="btn btn-outline" onclick="clearCart()">Clear Cart</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Alpha Uppies © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
